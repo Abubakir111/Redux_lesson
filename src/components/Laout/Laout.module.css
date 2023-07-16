@@ -5,24 +5,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+.nav{
+  display: flex;
+  column-gap: 58px;
 }
 .a{
-   margin-right: 40px;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   font-weight: 600;
-   font-size: 20px;
    color: rgb(185, 188, 190);
-   text-decoration: none;
 }
-.a::before{
-    content: '<';
-    padding-right: 5px;
+a{
+    text-decoration: none; 
 }
 .active{
-   margin-right: 40px;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   font-weight: 600;
-   font-size: 20px;
    color: rgb(34, 111, 141);
-   text-decoration: none;
+ ;
 }

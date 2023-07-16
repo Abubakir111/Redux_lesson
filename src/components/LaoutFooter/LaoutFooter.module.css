@@ -5,20 +5,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
 }
 .active{
-   margin-right: 40px;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   font-weight: 600;
-   font-size: 20px;
    color: rgb(69, 45, 207);
-   text-decoration: none;
 }
 a{
-    margin-right: 40px;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   font-weight: 600;
-   font-size: 20px;
-   color: rgb(181, 180, 185);
-   text-decoration: none;   
+   color: rgb(181, 180, 185);  
 }
