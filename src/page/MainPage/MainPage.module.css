@@ -1,0 +1,60 @@
+.contaier{
+width: 100%;
+height: max-content;
+display:  flex;
+flex-wrap: wrap;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: 500;
+justify-content: center;
+}
+.a{
+    text-decoration: none;
+}
+.card{
+    width: 347px;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 23px 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+}
+.card__inner{
+      width: 300px;
+  text-align: start;
+}
+.img{
+    width: 300px;
+    height: 250px;
+    background: brown;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.name{
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+   -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 2;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    display: -webkit-box;
+    display: box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    padding-left: 10px;
+
+}
+.span{
+    font-size: 18px;
+    color: #807c7c;
+    padding:0px 10px 0px 10px
+}
+.price{
+    font-size: 19px;
+    color: rgb(0, 175, 88);
+    margin-bottom: 20px;
+}
