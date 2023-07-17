@@ -2,10 +2,11 @@ import { Routes, Route } from 'react-router'
 import SingleItem from '../page/SingleItem/SingleItem'
 import Error from './Error/Error'
 import MainPage from '../page/MainPage/MainPage'
-import Laout from './Laout/Laout'
-import LaoutFooter from './LaoutFooter/LaoutFooter'
+import Laout from './Layout/Layout'
+import LaoutFooter from './LayoutFooter/LayoutFooter'
 import Shares from '../page/Shares/Shares'
 import Novelties from '../page/novelties/novelties'
+
 function App() {
   return (
     <>

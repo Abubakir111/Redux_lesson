@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom"
-import style from './LaoutFooter.module.css'
+import style from './LayoutFooter.module.css'
+
 const LaoutFooter = () => {
     const isActive = ({ isActive }) => isActive ? style.active : ''
     return <>
