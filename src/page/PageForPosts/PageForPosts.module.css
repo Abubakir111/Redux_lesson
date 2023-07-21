@@ -1,0 +1,23 @@
+.blockPost {
+  width: 80%;
+  height: max-content;
+  border: 1px solid blue;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: max-content max-content;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+
+.PostTitle {
+  color: black;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.PostBody {
+}
