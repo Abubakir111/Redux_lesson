@@ -8,11 +8,11 @@ const Layout = () => {
     <>
       <header className={style.header}>
         <nav className={style.nav}>
-          <NavLink className={isActive} to="/AddNewPost">
-            Добавить пост
-          </NavLink>
           <NavLink className={isActive} to="/">
-              Главное
+            Посты
+          </NavLink>
+          <NavLink className={isActive} to="/PageForPosts">
+            Добавить пост
           </NavLink>
         </nav>
       </header>

@@ -8,8 +8,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="/AddNewPost" element={<AddNewPost />} />
           <Route index element={<PageForPosts />} />
+          <Route path="/PageForPosts" element={<AddNewPost />} />
         </Route>
       </Routes>
     </>
