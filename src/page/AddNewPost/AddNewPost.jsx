@@ -1,13 +1,10 @@
-// import style from './AddNewPost.module.css'
-import axios from 'axios'
 import { useNavigate } from 'react-router'
-import { useState } from 'react'
 import style from './AddNewPost.module.css'
+// Сделал импорт шаблон для ссылки запроса
+import { dummyApi } from '../PageForPosts/PageForPosts'
 
 const AddNewPost = () => {
   const navigate = useNavigate()
-  const [data, dataState] = useState()
-
   const addpost = {
     title: '',
     body: '',
@@ -21,12 +18,10 @@ const AddNewPost = () => {
   }
   const AddPost = async () => {
     try {
-      const resposne = await axios.post(
-        'https://dummyjson.com/posts/add',
-        addpost
-      )
-      dataState(resposne)
-      navigate('/')
+      // Применил  шаблон для post запроса
+      const resposne = await dummyApi.post('/posts/add', addpost)
+      const resposneState = await resposne.data
+      navigate('/', { state: { resposneState } })
     } catch (error) {
       console.log(error)
     }
@@ -47,6 +42,7 @@ const AddNewPost = () => {
         cols="50"
         rows="15"
         placeholder="Напишите ваш  пост....."
+        onChange={OnChenge}
       ></textarea>
       <button className={style.button} onClick={() => AddPost()} type="button">
         Добавить
