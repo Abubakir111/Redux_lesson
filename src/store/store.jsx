@@ -1,22 +1,11 @@
-import { createStore } from 'redux'
-
-const defaultState = {
-  name: '',
-  email: '',
-  password: '',
-}
-const add = 'add'
-const reduser = (state = defaultState, action) => {
-  switch (action.type) {
-    case add:
-      state.name = action.paiload.name
-      state.email = action.paiload.email
-      state.password = action.paiload.password
-
-      return { ...state }
-    default:
-      return state
-  }
-}
-const store = createStore(reduser)
-export { store, add }
+import { legacy_createStore, combineReducers, applyMiddleware } from 'redux';
+import todoReducer from './todoReducer';
+import { composeWithDevTools } from '@redux-devtools/extension';
+import thunk from 'redux-thunk';
+const rootReducer = combineReducers({
+  counter: todoReducer,
+});
+export const store = legacy_createStore(
+  rootReducer,
+  composeWithDevTools(applyMiddleware(thunk))
+);
