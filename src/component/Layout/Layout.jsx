@@ -3,7 +3,7 @@ import style from './Layout.module.css';
 import { useSelector } from 'react-redux';
 
 const Layout = () => {
-  const ProductQuantities = useSelector((state) => state.basket.products);
+  const ProductQuantities = useSelector((state) => state.basket.productsBasket);
 
   return (
     <div>
@@ -12,6 +12,7 @@ const Layout = () => {
           <NavLink to="/">Продукты</NavLink>
           <div className={style.basketCotainer}>
             <NavLink to="/basket">Корзинка</NavLink>
+            {/* Рендеринг  количество  товаров  в корзине   */}
             <div className={style.basketNumber}>{ProductQuantities.length}</div>
           </div>
         </nav>

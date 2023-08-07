@@ -3,10 +3,10 @@ import style from './Basket.module.css';
 import { basketAction } from '../../store/BasketSlice';
 import { useDispatch } from 'react-redux';
 // import { v4 as uuidv4 } from 'uuid';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 const Basket = () => {
-  const dataBasket = useSelector((state) => state.basket.products);
+  const dataBasket = useSelector((state) => state.basket.productsBasket);
   const dispath = useDispatch();
 
   return (
@@ -27,6 +27,7 @@ const Basket = () => {
             </div>
             <div>
               <button
+                // Вызов  функций  для  дикремента  количества   выбранного товара
                 onClick={() =>
                   dispath(basketAction.quantityDecrement(product._id))
                 }
@@ -36,6 +37,7 @@ const Basket = () => {
               </button>
               <span className={style.spans}>{product.quantity}</span>
               <button
+                // Вызов  функций  для  инкремента  количества   выбранного товара
                 onClick={() =>
                   dispath(basketAction.quantityIncrement(product._id))
                 }
@@ -46,6 +48,7 @@ const Basket = () => {
             </div>
             <button
               onClick={() =>
+                // Вызов  функций  для  удаления  количества   выбранного товара
                 dispath(basketAction.removeBasketPorduct(product._id))
               }
               className={style.btnDelet}
